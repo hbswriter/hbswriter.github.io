@@ -1,556 +1,854 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="HB S — Writer, Thinker and Novelist. Writing about human nature, philosophy, loneliness, silence, suffering and life.">
+  <title>HB S — Author & Novelist | Mohammad Hasibul Hasan</title>
 
-<meta name="author" content="HB S — Mohammad Hasibul Hasan">
+  <meta name="description" content="Official website of HB S — the author name of Mohammad Hasibul Hasan, a writer, thinker, and novelist exploring human nature, philosophy, loneliness, silence, suffering, memory, and life.">
 
-<title>HB S — Writer & Novelist</title>
+  <meta name="author" content="Mohammad Hasibul Hasan">
+  <meta name="creator" content="Mohammad Hasibul Hasan">
 
-<style>
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
 
-:root{
-  --bg:#0b0b0d;
-  --card:#141418;
-  --text:#eeeef2;
-  --muted:#a6a6b0;
-  --line:#2a2a31;
-}
+  <link rel="canonical" href="https://hbswriter.github.io/">
 
-*{
-  box-sizing:border-box;
-}
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="HB S — Author & Novelist">
+  <meta property="og:description" content="Official website of HB S — the author name of Mohammad Hasibul Hasan.">
+  <meta property="og:url" content="https://hbswriter.github.io/">
+  <meta property="og:site_name" content="HB S">
 
-html{
-  scroll-behavior:smooth;
-}
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HB S — Author & Novelist">
+  <meta name="twitter:description" content="Official website of HB S — writer, thinker, and novelist Mohammad Hasibul Hasan.">
 
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:Georgia,serif;
-  line-height:1.8;
-}
+  <!-- Author identity -->
+  <meta property="profile:first_name" content="Mohammad">
+  <meta property="profile:last_name" content="Hasibul Hasan">
 
-.container{
-  max-width:900px;
-  margin:auto;
-  padding:0 22px;
-}
-
-/* NAVIGATION */
-
-nav{
-  position:sticky;
-  top:0;
-  background:rgba(11,11,13,.94);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid var(--line);
-  z-index:5;
-}
-
-.navin{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  min-height:62px;
-}
-
-.logo{
-  font-size:24px;
-  font-weight:bold;
-  letter-spacing:2px;
-}
-
-nav a{
-  color:var(--muted);
-  text-decoration:none;
-  margin-left:18px;
-  font-family:Arial,sans-serif;
-  font-size:14px;
-}
-
-nav a:hover{
-  color:#fff;
-}
-
-/* HERO */
-
-.hero{
-  padding:95px 0 70px;
-  text-align:center;
-  border-bottom:1px solid var(--line);
-}
-
-h1{
-  font-size:clamp(52px,12vw,88px);
-  margin:0;
-  letter-spacing:5px;
-}
-
-.tag{
-  color:var(--muted);
-  font-style:italic;
-  font-size:18px;
-}
-
-.intro{
-  max-width:680px;
-  margin:28px auto 0;
-  font-size:19px;
-  color:#d8d8dd;
-}
-
-.btn{
-  display:inline-block;
-  margin-top:28px;
-  padding:11px 22px;
-  border:1px solid #eee;
-  color:#fff;
-  text-decoration:none;
-}
-
-.btn:hover{
-  background:#fff;
-  color:#000;
-}
-
-/* SECTIONS */
-
-section{
-  padding:72px 0;
-  border-bottom:1px solid var(--line);
-}
-
-h2{
-  font-size:32px;
-  margin:0 0 25px;
-}
-
-/* WRITING CARDS */
-
-.card{
-  background:var(--card);
-  border:1px solid var(--line);
-  padding:28px;
-  margin:18px 0;
-}
-
-.card h3{
-  margin:0 0 8px;
-  font-size:24px;
-}
-
-.meta{
-  color:#888;
-  font:13px Arial,sans-serif;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-.quote{
-  border-left:3px solid #eee;
-  padding-left:20px;
-  font-size:21px;
-  font-style:italic;
-  color:#ddd;
-}
-
-.about{
-  color:#d0d0d6;
-}
-
-/* CONTACT */
-
-.social{
-  text-align:center;
-}
-
-/* FOOTER */
-
-footer{
-  padding:50px 0;
-  color:#777;
-  text-align:center;
-  font:13px Arial,sans-serif;
-}
-
-/* MOBILE */
-
-@media(max-width:600px){
-
-  nav .links{
-    display:none;
+  <!-- Schema.org: Author -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "https://hbswriter.github.io/#author",
+    "name": "Mohammad Hasibul Hasan",
+    "alternateName": "HB S",
+    "url": "https://hbswriter.github.io/",
+    "jobTitle": "Author and Novelist",
+    "description": "Mohammad Hasibul Hasan, known by the author name HB S, is a writer, thinker, and novelist.",
+    "sameAs": [
+      "https://www.facebook.com/hasibul04.hbs"
+    ]
   }
+  </script>
 
-  .hero{
-    padding:70px 0 55px;
+  <!-- Schema.org: Website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://hbswriter.github.io/#website",
+    "url": "https://hbswriter.github.io/",
+    "name": "HB S",
+    "alternateName": "HB S — Mohammad Hasibul Hasan",
+    "description": "Official website of author HB S, also known as Mohammad Hasibul Hasan.",
+    "publisher": {
+      "@type": "Person",
+      "name": "Mohammad Hasibul Hasan",
+      "url": "https://hbswriter.github.io/"
+    }
   }
+  </script>
 
-  section{
-    padding:55px 0;
-  }
+  <style>
 
-  .card{
-    padding:22px;
-  }
+    :root {
+      --bg: #0b0b0d;
+      --card: #15151a;
+      --card-hover: #1b1b21;
+      --text: #eeeeF2;
+      --muted: #a7a7b1;
+      --soft: #d4d4da;
+      --line: #292930;
+      --white: #ffffff;
+      --max-width: 960px;
+    }
 
-}
+    * {
+      box-sizing: border-box;
+    }
 
-</style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 44px));
+      margin: 0 auto;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 11, 13, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-inner {
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--white);
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 620px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      border-bottom: 1px solid var(--line);
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(255,255,255,0.045),
+          transparent 48%
+        );
+    }
+
+    .hero-content {
+      width: 100%;
+      padding: 100px 0 90px;
+    }
+
+    .eyebrow {
+      margin-bottom: 18px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(60px, 14vw, 120px);
+      line-height: 1;
+      letter-spacing: 8px;
+      font-weight: 700;
+    }
+
+    .hero-name {
+      margin-top: 24px;
+      color: var(--soft);
+      font-size: clamp(17px, 3vw, 22px);
+    }
+
+    .hero-role {
+      margin-top: 8px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero-description {
+      max-width: 700px;
+      margin: 32px auto 0;
+      color: #d8d8de;
+      font-size: clamp(17px, 2.5vw, 20px);
+    }
+
+    .hero-buttons {
+      margin-top: 34px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 23px;
+      border: 1px solid #eeeeee;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .button.secondary {
+      border-color: var(--line);
+      color: var(--muted);
+    }
+
+    .button.secondary:hover {
+      border-color: #777780;
+      background: transparent;
+      color: var(--white);
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 82px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(31px, 6vw, 42px);
+      line-height: 1.2;
+    }
+
+    .section-intro {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    /* WRITINGS */
+
+    .writing-card {
+      margin-top: 25px;
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .writing-card:hover {
+      background: var(--card-hover);
+      border-color: #3a3a43;
+      transform: translateY(-2px);
+    }
+
+    .writing-meta {
+      margin-bottom: 9px;
+      color: #888892;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .writing-card h3 {
+      margin: 0 0 13px;
+      font-size: 27px;
+      line-height: 1.3;
+    }
+
+    .writing-card p {
+      color: #d1d1d7;
+    }
+
+    .quote {
+      margin: 18px 0;
+      padding-left: 20px;
+      border-left: 3px solid #eeeeee;
+      color: #ddddE2;
+      font-size: 21px;
+      font-style: italic;
+    }
+
+    /* ABOUT */
+
+    .about-box {
+      max-width: 760px;
+    }
+
+    .about-box p {
+      color: #d1d1d7;
+      font-size: 18px;
+    }
+
+    .identity-box {
+      margin-top: 30px;
+      padding: 25px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
+
+    .identity-label {
+      color: #888892;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .identity-name {
+      margin-top: 7px;
+      font-size: 25px;
+    }
+
+    .identity-detail {
+      margin-top: 5px;
+      color: var(--muted);
+    }
+
+    /* PHILOSOPHY */
+
+    .philosophy {
+      max-width: 780px;
+    }
+
+    .philosophy .large-quote {
+      margin: 25px 0 30px;
+      color: #eeeeF2;
+      font-size: clamp(24px, 4vw, 32px);
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    .philosophy p {
+      color: #d0d0d6;
+      font-size: 18px;
+    }
+
+    /* NOVEL */
+
+    .novel-card {
+      padding: 38px;
+      margin-top: 25px;
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(
+          145deg,
+          #17171c,
+          #101014
+        );
+    }
+
+    .novel-status {
+      color: #888892;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .novel-card h3 {
+      margin: 12px 0;
+      font-size: 32px;
+    }
+
+    .novel-card p {
+      max-width: 700px;
+      color: #d0d0d6;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .social-buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 45px 0;
+      text-align: center;
+      color: #707078;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+    }
+
+    .footer-name {
+      margin-bottom: 7px;
+      color: #9999a1;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      .container {
+        width: min(100% - 32px, var(--max-width));
+      }
+
+      .nav-inner {
+        min-height: 58px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-content {
+        padding: 85px 0 75px;
+      }
+
+      h1 {
+        letter-spacing: 5px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .writing-card,
+      .novel-card {
+        padding: 23px;
+      }
+
+      .quote {
+        font-size: 18px;
+      }
+    }
+
+  </style>
 </head>
-
 
 <body>
 
+  <!-- NAVIGATION -->
 
-<!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-inner">
 
-<nav>
-
-  <div class="container navin">
-
-    <div class="logo">
-      HB S
-    </div>
-
-    <div class="links">
-
-      <a href="#home">Home</a>
-
-      <a href="#writings">
-        Writings
+      <a class="logo" href="#home">
+        HB S
       </a>
 
-      <a href="#about">
-        About
-      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#writings">Writings</a>
+        <a href="#about">About</a>
+        <a href="#philosophy">Philosophy</a>
+        <a href="#novel">Novel</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-      <a href="#philosophy">
-        Philosophy
-      </a>
+    </div>
+  </nav>
 
-      <a href="#contact">
-        Contact
-      </a>
+
+  <!-- HOME -->
+
+  <header class="hero" id="home">
+
+    <div class="container hero-content">
+
+      <div class="eyebrow">
+        Official Author Website
+      </div>
+
+      <h1>
+        HB S
+      </h1>
+
+      <div class="hero-name">
+        Mohammad Hasibul Hasan
+      </div>
+
+      <div class="hero-role">
+        Writer • Thinker • Novelist
+      </div>
+
+      <p class="hero-description">
+        Words about human nature, philosophy, loneliness, silence,
+        suffering, memory, life, and the contradictions inside people.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a class="button" href="#writings">
+          Read My Writings ↓
+        </a>
+
+        <a class="button secondary" href="#about">
+          About HB S
+        </a>
+
+      </div>
 
     </div>
 
-  </div>
-
-</nav>
+  </header>
 
 
+  <main>
 
-<!-- HERO -->
+    <!-- WRITINGS -->
 
-<header class="hero" id="home">
+    <section id="writings">
 
-  <div class="container">
+      <div class="container">
 
-    <h1>
-      HB S
-    </h1>
+        <h2>
+          Selected Writings
+        </h2>
 
-    <div class="tag">
-      Mohammad Hasibul Hasan —
-      Writer • Thinker • Novelist
+        <p class="section-intro">
+          Reflections and ideas from HB S about life, people,
+          memory, suffering, and the questions hidden beneath
+          ordinary experiences.
+        </p>
+
+
+        <article class="writing-card">
+
+          <div class="writing-meta">
+            Reflection
+          </div>
+
+          <h3>
+            Winter Note
+          </h3>
+
+          <div class="quote">
+            “Perhaps the cruelest thing about winter isn't the cold.
+            It's suffering in silence while knowing that nobody is coming.”
+          </div>
+
+          <p>
+            For HB S, winter is not simply a season.
+            It becomes a metaphor for being human — calling for help
+            with all your strength in a world that can sometimes be
+            too quiet to hear you.
+          </p>
+
+        </article>
+
+
+        <article class="writing-card">
+
+          <div class="writing-meta">
+            Philosophy
+          </div>
+
+          <h3>
+            On Human Nature
+          </h3>
+
+          <p>
+            Humans naturally want to understand and discover the world.
+            Yet the ideas we create can eventually become the very
+            things that imprison us.
+          </p>
+
+          <p>
+            People can be taught to see others as enemies because of
+            politics, governments, ideology, borders, and beliefs —
+            while forgetting the humanity beneath those differences.
+          </p>
+
+        </article>
+
+
+        <article class="writing-card">
+
+          <div class="writing-meta">
+            Memory • Life
+          </div>
+
+          <h3>
+            School Life
+          </h3>
+
+          <p>
+            School is a place where people spend years wishing to grow
+            up, only to later wish they could return.
+          </p>
+
+          <p>
+            Classmates, seniors, juniors, and teachers become part of
+            memories through studying, joking, friendship, fun, and
+            shared experiences. After graduation, everyone may go
+            separate ways, but those memories can remain.
+          </p>
+
+          <p>
+            Academic struggle should never be a reason to humiliate
+            someone. A person's worth is greater than a mark on a page.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+      <div class="container">
+
+        <h2>
+          About HB S
+        </h2>
+
+        <div class="about-box">
+
+          <p>
+            <strong>HB S</strong> is the author name of
+            <strong>Mohammad Hasibul Hasan</strong>.
+          </p>
+
+          <p>
+            He is a writer, thinker, and novelist whose work explores
+            the darker and quieter sides of human experience.
+          </p>
+
+          <p>
+            His writing looks beyond appearances to question why people
+            think, suffer, love, fear, divide themselves, remember,
+            and search for meaning.
+          </p>
+
+          <p>
+            Through fiction, reflections, and philosophical writing,
+            HB S explores the questions that often remain hidden
+            beneath ordinary life.
+          </p>
+
+
+          <div class="identity-box">
+
+            <div class="identity-label">
+              Author Identity
+            </div>
+
+            <div class="identity-name">
+              HB S
+            </div>
+
+            <div class="identity-detail">
+              Mohammad Hasibul Hasan
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PHILOSOPHY -->
+
+    <section id="philosophy">
+
+      <div class="container">
+
+        <h2>
+          HB S Philosophy
+        </h2>
+
+        <div class="philosophy">
+
+          <div class="large-quote">
+            “I don't write to make things just beautiful —
+            I write to make you feel something and think about it differently.”
+          </div>
+
+          <p>
+            Every story can carry a question.
+            Every silence can hide a thought.
+            And sometimes the things people cannot say become
+            the things worth writing.
+          </p>
+
+          <p>
+            Human beings are naturally driven to understand and
+            discover. But sometimes the worlds we build inside our
+            minds become stronger than the reality around us.
+          </p>
+
+          <p>
+            HB S writes about those contradictions — the distance
+            between what people believe and what they feel, between
+            what they say and what they leave unsaid.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- NOVEL -->
+
+    <section id="novel">
+
+      <div class="container">
+
+        <h2>
+          The Novel
+        </h2>
+
+        <p class="section-intro">
+          A future literary project by HB S.
+        </p>
+
+        <div class="novel-card">
+
+          <div class="novel-status">
+            Coming Soon
+          </div>
+
+          <h3>
+            A Novel by HB S
+          </h3>
+
+          <p>
+            This space will become the home of HB S's future novel —
+            including chapters, characters, ideas, announcements,
+            and other material surrounding the project.
+          </p>
+
+          <p>
+            The story is still being written.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="contact">
+
+      <div class="container">
+
+        <h2>
+          Follow HB S
+        </h2>
+
+        <p>
+          Follow for new writings, updates, and future projects.
+        </p>
+
+        <div class="social-buttons">
+
+          <a
+            class="button"
+            href="https://www.facebook.com/hasibul04.hbs"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="HB S on Facebook"
+          >
+            Facebook
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-name">
+        HB S
+      </div>
+
+      <div>
+        Mohammad Hasibul Hasan — Writer • Thinker • Novelist
+      </div>
+
+      <div style="margin-top: 8px;">
+        © 2026 HB S. All rights reserved.
+      </div>
+
     </div>
 
-    <p class="intro">
-
-      Words about human nature,
-      philosophy, loneliness,
-      silence, suffering,
-      and the contradictions
-      inside people.
-
-    </p>
-
-    <a class="btn" href="#writings">
-      Read My Writings ↓
-    </a>
-
-  </div>
-
-</header>
-
-
-
-<main class="container">
-
-
-
-<!-- WRITINGS -->
-
-<section id="writings">
-
-  <h2>
-    Selected Writings
-  </h2>
-
-
-  <!-- WINTER -->
-
-  <article class="card">
-
-    <div class="meta">
-      Reflection
-    </div>
-
-    <h3>
-      Winter Note
-    </h3>
-
-    <p class="quote">
-
-      “Perhaps the cruelest thing
-      about winter isn't the cold.
-      It's suffering in silence
-      while knowing that nobody
-      is coming.”
-
-    </p>
-
-    <p>
-
-      For HB S, winter is not simply
-      a season. It is a metaphor for
-      being human — calling for help
-      with all your strength, in a
-      world too quiet to hear you.
-
-    </p>
-
-  </article>
-
-
-
-  <!-- HUMAN NATURE -->
-
-  <article class="card">
-
-    <div class="meta">
-      Philosophy
-    </div>
-
-    <h3>
-      On Human Nature
-    </h3>
-
-    <p>
-
-      Humans want to understand
-      and discover the world, yet
-      they can become prisoners
-      of the ideas they themselves
-      create.
-
-    </p>
-
-    <p>
-
-      We are taught to see others
-      as enemies because of
-      politics, governments,
-      and ideology — forgetting
-      the humanity beneath
-      borders, beliefs,
-      and differences.
-
-    </p>
-
-  </article>
-
-
-
-  <!-- SCHOOL LIFE -->
-
-  <article class="card">
-
-    <div class="meta">
-      Memory • Life
-    </div>
-
-    <h3>
-      School Life
-    </h3>
-
-    <p>
-
-      School is a place where
-      people spend years wishing
-      to grow up, and later wish
-      they could return.
-
-    </p>
-
-    <p>
-
-      Classmates, seniors, juniors,
-      and teachers become part
-      of memories that can remain
-      long after everyone goes
-      their separate ways.
-
-    </p>
-
-    <p>
-
-      Academic struggle should
-      never be a reason to
-      humiliate someone.
-
-      A person's worth is greater
-      than a mark on a page.
-
-    </p>
-
-  </article>
-
-
-
-  <!-- NOVEL -->
-
-  <article class="card">
-
-    <div class="meta">
-      Coming Soon
-    </div>
-
-    <h3>
-      The Novel
-    </h3>
-
-    <p>
-
-      A future novel by HB S.
-
-      This space will become the
-      home for chapters, characters,
-      ideas, and announcements.
-
-    </p>
-
-  </article>
-
-
-</section>
-
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-  <h2>
-    About HB S
-  </h2>
-
-  <p class="about">
-
-    HB S is a writer and thinker
-    who explores the darker and
-    quieter sides of human
-    experience.
-
-  </p>
-
-  <p class="about">
-
-    His writing looks beyond
-    appearances to question why
-    people think, suffer, love,
-    fear, divide themselves,
-    and search for meaning.
-
-  </p>
-
-</section>
-
-
-
-<!-- PHILOSOPHY -->
-
-<section id="philosophy">
-
-  <h2>
-    HB S Philosophy
-  </h2>
-
-  <p class="quote">
-
-    “I don't write to make things
-    just beautiful — I write to
-    make you feel something and
-    think about it differently.”
-
-  </p>
-
-  <p>
-
-    Every story can carry a
-    question.
-
-    Every silence can hide
-    a thought.
-
-    And sometimes the things
-    people cannot say become
-    the things worth writing.
-
-  </p>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="social">
-
-  <h2>
-    Follow HB S
-  </h2>
-
-  <p>
-
-    For new writings, updates,
-    and future projects:
-
-  </p>
-
-  <a
-    class="btn"
-    href="https://www.facebook.com/hasibul04.hbs"
-    target="_blank"
-    rel="noopener">
-
-    Facebook
-
-  </a>
-
-</section>
-
-
-</main>
-
-
-
-<!-- FOOTER -->
-
-<footer>
-
-  © 2026 HB S —
-  Words worth remembering.
-
-</footer>
-
+  </footer>
 
 </body>
 </html>

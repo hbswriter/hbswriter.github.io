@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Write Post</title>
+<style>
+body{font-family:system-ui;max-width:700px;margin:0 auto;padding:20px;background:#fafafa}
+input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ddd;border-radius:8px;font-size:16px;box-sizing:border-box}
+textarea{height:200px}
+button{background:#111;color:#fff;padding:12px;border:none;border-radius:8px;width:100%;margin-top:10px;font-size:16px}
+.box{background:#111;color:#0f0;padding:15px;border-radius:10px;white-space:pre-wrap;word-break:break-all;margin-top:20px;display:none}
+</style>
+</head>
+<body>
+<h1>✍️ নতুন পোস্ট লেখো</h1>
+<input id="title" placeholder="Title">
+<input id="date" type="date">
+<input id="image" placeholder="Image Link (ঐচ্ছিক)">
+<input id="excerpt" placeholder="ছোট সারাংশ - Google এ দেখাবে">
+<textarea id="content" placeholder="পুরো লেখা..."></textarea>
+<button onclick="gen()">Generate Code</button>
+<div id="out" class="box"></div>
+<button id="copyBtn" style="display:none;background:#00a651" onclick="copyC()">Copy</button>
+
+<script>
+document.getElementById('date').valueAsDate=new Date();
+function gen(){
+ const id=Date.now();
+ const o={id,title:title.value,date:date.value,author:"HB S",image:image.value,excerpt:excerpt.value,content:`<p>${content.value.replace(/\n/g,'<br>')}</p>`};
+ out.style.display='block'; out.innerText=JSON.stringify(o,null,2)+',';
+ copyBtn.style.display='block'; window.c=out.innerText;
+}
+function copyC(){navigator.clipboard.writeText(window.c);alert('Copied! এখন posts.json এ paste করো');}
+</script>
+</body>
+</html>

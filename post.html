@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post - HB S</title>
+<style>
+body{font-family:system-ui;max-width:750px;margin:0 auto;padding:20px;line-height:1.7;background:#fff}
+.hero{width:100%;border-radius:16px;max-height:400px;object-fit:cover}
+.meta{color:#666}
+.comments{margin-top:50px;border-top:1px solid #eee;padding-top:20px}
+</style>
+</head>
+<body>
+<a href="blog.html">← Back to Blog</a>
+<div id="post">Loading...</div>
+<div class="comments">
+<h3>💬 Comments</h3>
+<div id="disqus_thread"></div>
+</div>
+<script>
+const id=new URLSearchParams(location.search).get('id');
+fetch('posts.json').then(r=>r.json()).then(posts=>{
+ const p=posts.find(x=>x.id==id);
+ document.title=p.title+' - HB S';
+ document.getElementById('post').innerHTML=`
+  ${p.image?`<img class="hero" src="${p.image}">`:''}
+  <p class="meta">${p.date} • ${p.author}</p>
+  <h1>${p.title}</h1>
+  <div>${p.content}</div>
+ `;
+});
+(function(){var d=document,s=d.createElement('script');
+s.src='https://hbswriter-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp',+new Date());
+(d.head||d.body).appendChild(s);})();
+</script>
+</body>
+</html>

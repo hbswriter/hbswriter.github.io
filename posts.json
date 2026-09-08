@@ -1,11 +1,20 @@
 [
   {
+    "id": 2,
+    "title": "Life is not fair",
+    "date": "2026-09-08",
+    "author": "HB S",
+    "image": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800",
+    "excerpt": "why life is unfair",
+    "content": "<p>জীবন সবার জন্য সমান হয় না, কেও সব কিছু না চাইতেই পেয়ে যাই আর কেও সারাজীবন চেষ্টা ও কঠিন পরিশ্রম করে ও সেটা পায় না।</p><p>Life is not equal for everyone - some get everything without even asking for it, while others never get it even after a lifetime of trying and hard work.</p><p>That's reality. We can't change the game, but we can change how we play it.</p>"
+  },
+  {
     "id": 1,
     "title": "Humans are curious creatures",
     "date": "2026-05-13",
     "author": "HB S",
-    "image": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800",
-    "excerpt": "They want to understand and discover the world—but sometimes they become trapped by the very ideas they create.",
-    "content": "<p>Humans are curious creatures. They want to understand and discover the world—but sometimes they become trapped by the very ideas they create.</p>"
+    "image": "https://images.unsplash.com/photo-1529156069891-65d6d3b4e8b2?w=800",
+    "excerpt": "They want to understand and discover the world around them",
+    "content": "<p>Humans are curious creatures. They want to understand and discover the world around them.</p>"
   }
 ]
